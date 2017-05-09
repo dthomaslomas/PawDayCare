@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'a_little_sunshineregular';
+    src: url('../fonts/a_little_sunshine-webfont.woff2') format('woff2'),
+         url('../fonts/a_little_sunshine-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	background: white;
+	font-family: 'a_little_sunshineregular';
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4{
+	font-size: 80px;
+  	color: #364148;
+  	margin: 0;
+}
+p, a, li, section{
+	font-family: 'Josefin Slab', serif;
+	font-size: 18px;
+	color: #364148;
+    line-height: 1.75;
+    margin: 0px;
+    font-weight:bold;
+}
+.container{
+	width: 980px;
+	padding: 0px 10px;
+	margin: 0px auto;
+	padding: 40px 0px;
+}
+.header{
+	padding-top: 10px;
+}
+.logo {
+	width: 270px;
+	float: left;
+}
+.navigation {
+	display: inline-block;
+	float:right;
+}
+.navigation li{
+	display: inline-block;
+	text-align: center;
+	padding: 12px;
+    font-size: 30px;
+}
+.navigation li:hover{
+	color: black;
+}
+.banner{
+	width: 100%;
+	height: 316px;
+	padding-top: 100px;
+	clear: both;
+	background:url('../images/hero.png');
+	position: relative;
+}
+.banner h1{
+	color: #fff;
+	text-align: center;
+}
+.banner img {
+	position: absolute;
+    left: 37%;
+    bottom: -50px;
+}
+.prices {
+	display: block;
+	width: 100%;
+	height:300px;
+	background-color: #ddcddd;
+}
+.testimonials {
+	display: block;
+	width: 100%;
+	height: 300px;
+	background-color: yellow;
+}
+.contact {
+	width: 100%;
+	height:620px;
+	background: url('../images/contactBG.png');
+	background-size: 100% 100%;
+}
+.footer {
+	display: block;
+	width: 100%;
+	height: 300px;
+	background-color: #e5f6ff;
+	text-align: center;
+}
+
+.aboutus *{
+	padding-right: 30%;
+}
