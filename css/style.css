@@ -94,6 +94,9 @@ p, a, li, section{
 	text-align: center;
 	padding: 40px 0px;
 }
+.footer .socialIcons{
+	margin-bottom: 20px;
+}
 
 .aboutus *{
 	padding-right: 30%;
