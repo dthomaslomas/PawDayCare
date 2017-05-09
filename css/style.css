@@ -93,11 +93,16 @@ p, a, li, section{
 	background-color: #e5f6ff;
 	text-align: center;
 	padding: 40px 0px;
+	position: relative;
+}
+.footer .dogfooter {
+	position: absolute;
+	top: -100px;
+    left: 15%;
 }
 .footer .socialIcons{
 	margin-bottom: 20px;
 }
-
 .aboutus *{
 	padding-right: 30%;
 }
