@@ -18,6 +18,9 @@ h1,h2,h3,h4,h5{
   	margin: 0;
   	position: relative;
 }
+h2,h3,h4,h5{
+	float: left;
+}
 p, a, li, section{
 	font-family: 'Josefin Slab', serif;
 	font-size: 18px;
@@ -25,6 +28,7 @@ p, a, li, section{
     line-height: 1.75;
     margin: 0px;
     font-weight:bold;
+    clear: both;
 }
 .container{
 	width: 980px;
@@ -114,7 +118,6 @@ p, a, li, section{
 	width: 60px;
 	height: 35px;
 	background: url('../images/pawPrints.png');
-	position: absolute;
-	top: 20%;
-    left: 0px;
+	float: right;
+    margin: 20px;
 }
