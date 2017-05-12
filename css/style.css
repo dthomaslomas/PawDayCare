@@ -124,3 +124,14 @@ p, a, li, section{
 	float: right;
     margin: 20px;
 }
+.price-box {
+	width: auto;
+	background-color: white;
+	padding: 15px 80px 15px 15px;
+	float:left;
+    margin: 15px 15px 0 0;
+    width: 300px;
+}
+.sml{
+	max-width: 130px;
+}	
