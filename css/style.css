@@ -79,15 +79,40 @@ p, a, li, section{
 .prices {
 	display: block;
 	width: 100%;
-	min-height:320px;
+	min-height:420px;
 	background:url(../images/pricesTopSlice.jpg) no-repeat 100% 0px, url(../images/pricesBottomSlice.jpg) 100% 100% no-repeat, #74b3d6;
     background-size: 100%;
+}
+.minute-walk {
+	width: 300px;
+  	height: 28px;
+  	font-family: serif;
+  	font-size: 16px;
+  	line-height: 1.75;
+  	color: #ffffff;
+  	float:left;
+}
+.walk-price {
+	width: 130px;
+	height: 28px;
+	font-family: serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.75;
+	color: #ffffff;
+	float:left;
 }
 .testimonials {
 	display: block;
 	width: 100%;
 	min-height: 320px;
 	background-color: white;
+}
+.testimonial1 {
+	width: 405px;
+  	height: 248px;
+  	border-radius: 30px;
+  	background-color: #69a2c2;
 }
 .contact {
 	width: 100%;
@@ -126,12 +151,27 @@ p, a, li, section{
 }
 .price-box {
 	width: auto;
-	background-color: white;
-	padding: 15px 80px 15px 15px;
 	float:left;
-    margin: 15px 15px 0 0;
+    margin: 15px 40px 0 0;
     width: 300px;
+}
+.price-box h4{
+	background-color: #fff;
+	width:100%;
+	font-family: 'Josefin Slab', serif;
+	font-size: 21px;
+	color: #364148;
+	padding:20px 10px;
+	margin-bottom: 10px;
+}
+.price-box p{
+	color:#fff;
+	padding:0px 10px;
 }
 .sml{
 	max-width: 130px;
 }	
+
+.clear {
+	clear:both;
+}
