@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5{
 h2,h3,h4,h5{
 	float: left;
 }
-p, a, li, section{
+p, a, li, b, section{
 	font-family: 'Josefin Slab', serif;
 	font-size: 18px;
 	color: #364148;
@@ -107,12 +107,53 @@ p, a, li, section{
 	width: 100%;
 	min-height: 320px;
 	background-color: white;
+	display: table;
+	padding-bottom: 60px;
 }
-.testimonial1 {
-	width: 405px;
-  	height: 248px;
+.testimonials p{
+	 margin-bottom:20px;
+}
+.testimonial {
+	width: 36%;
+  	min-height: 248px;
   	border-radius: 30px;
   	background-color: #69a2c2;
+  	position: relative;
+  	padding:20px 20px 20px 70px;
+  	margin-right: 9%;
+  	float: left;
+}
+.testimonial:last-child{
+	margin-right: 0px;
+}
+.testimonial:before{
+	content:"";
+	display:block;
+	background: url('../images/testispeach_360.png');
+	width:100px;
+	height: 100px;
+	position: absolute;
+	top: 20px;
+	left:-50px;
+}
+.testimonial h5{
+	font-size: 44px;
+  	font-weight: bold;
+  	color: white;
+  	width: 100%;
+}
+.testimonial b{
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #b8d7e8;
+	width: 100%;
+}
+.testimonial p {
+	font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    padding: 0px;
+    margin-top: 20px;
 }
 .contact {
 	width: 100%;
