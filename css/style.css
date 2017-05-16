@@ -161,6 +161,23 @@ p, a, li, b, section{
 	background: url('../images/contactBG.png');
 	background-size: 100% 100%;
 }
+.contact .contactSplitContainer{
+	width: 40%;
+	float: left;
+	border-radius:6px;
+	min-height: 300px;
+}
+.contact .contactSplitContainer:last-child{
+	background: transparent;
+	margin-left: 5%;
+}
+.contact h4{
+	color: #fff;
+	font-size: 46px;
+}
+.contact h5 {
+	color:#fff;
+}
 .footer {
 	display: block;
 	width: 100%;
@@ -190,6 +207,24 @@ p, a, li, b, section{
 	float: right;
     margin: 20px;
 }
+.email:after{
+	content: "";
+	display: block;
+	width: 37px;
+	height: 30px;
+	background: url('../images/contactEnvelope.png');
+	float: right;
+    margin: 8px 20px;
+}
+.tel:after{
+	content: "";
+	display: block;
+	width: 33px;
+	height: 29px;
+	background: url('../images/contactphone_360.png');
+	float: right;
+    margin: 8px 20px;
+}
 .price-box {
 	width: auto;
 	float:left;
@@ -212,7 +247,6 @@ p, a, li, b, section{
 .sml{
 	max-width: 130px;
 }	
-
 .clear {
 	clear:both;
 }
