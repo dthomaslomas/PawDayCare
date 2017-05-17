@@ -38,6 +38,7 @@ p, a, li, b, section{
 }
 .container p{
 	padding-right: 30%;
+	padding-bottom: 20px
 }
 .header{
 	padding-top: 10px;
@@ -182,6 +183,7 @@ p, a, li, b, section{
 .contact h4{
 	color: #fff;
 	font-size: 46px;
+	padding-bottom: 20px;
 }
 .contact h5 {
 	color:#fff;
