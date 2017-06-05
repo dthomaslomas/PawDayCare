@@ -301,3 +301,36 @@ h1,h2,h3,h4,h5{
  .clear {
  	clear:both;
  } 
+
+/*Tablet*/
+@media only screen and (max-width: 768px) {}
+
+/*Mobile*/
+@media only screen and (max-width: 425px) {
+  h1,h2,h3,h4,h5{
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  .navigation{
+    display: none;
+  }
+  .container{
+      width: 100%;
+   }
+   .container p{
+    padding-right:0;
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+   }
+   .banner {
+        height: 186px;
+    }
+    .banner h1{
+      font-size: 40px;
+    }
+    .banner img{
+      left:0;
+    }
+}
