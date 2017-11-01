@@ -99,14 +99,14 @@
 				<div class="contactSplitContainer">
 					<h4 class="title email">Email</h4>
 					<div class="emailcontainer">
-						<form action="https://formspree.io/daniel.lomas@itcuk.com" method="POST">
+						<form>
 							<label>Name:</label>
 							<input type="text" id="name" name="name">
 							<label>E-mail:</label>
 							<input type="text" id="mail" name="_replyto">
 							<label>Message:</label>
 							<textarea id="message" name="message"></textarea> 	
-							<button type="submit" value="Send">Send</button>
+							<button id="formSubmit">Send</button>
 						</form>
 					</div>
 				</div>
@@ -133,6 +133,36 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="free"></script>>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		document.addEventListener("DOMContentLoaded", function(){
+			
+			var submitBtn = document.getElementById("formSubmit");
+			submitBtn.addEventListener("click", function(){
+				alert("1");
+				postForm();
+			}, false);
+
+
+			function postForm(){
+				alert("fdff");
+				$.ajax({
+				    url: "https://formspree.io/dthomaslomas@gmail.com", 
+				    method: "POST",
+				    data: {message: "hello!"},
+				    dataType: "json",
+				    success : function(data){
+				    	alert("sdg");
+				    },
+				    error : function(data){
+				    	console.log(data);
+				    }
+				});
+			}
+
+
+		}, false);
+	</script>
 </body>
 </html>
