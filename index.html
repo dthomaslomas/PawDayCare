@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="google-site-verification" content="E91jUrzmYr77fceuLdVUw9ZBp9lyXNLvoJJ-h-Z4pQo" />
 </head>
 <body>
 	<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -60,9 +61,9 @@
 			</div>
 			<div class="price-box sml">
 				<h4>Prices</h4>
-				<p>£9.00</p>
-				<p>£11.00</p>
-				<p>£12.50</p>
+				<p>&pound;9.00</p>
+				<p>&pound;11.00</p>
+				<p>&pound;12.50</p>
 			</div>
 			<p>These prices are a general guide we are happy to discuss your individual needs and budget to ensure your dog gets the attention, love and care they deserve.</p>
 		</div>
@@ -78,13 +79,13 @@
 			<div class="testimonial">	
 				<h5>Angela Goode</h5>
 				<b>Thanet</b>
-				<p>“Paw Day Care have been looking after our energetic 2 year old Masie for 4 months and we couldn't be happier with the love and attention she recieves"</p>
+				<p>"Paw Day Care have been looking after our energetic 2 year old Masie for 4 months and we couldn't be happier with the love and attention she recieves"</p>
 			</div>
 
 			<div class="testimonial">	
 				<h5>Mike Andrews</h5>
 				<b>Broadstairs</b>
-				<p>“Paw Day Care have given me the peace of mind I've needed while I'm at work. They've never let me down and Barney always comes back happy and tired, it's fantastic to find people who care for my dogs just as much as I do”</p>
+				<p>"Paw Day Care have given me the peace of mind I've needed while I'm at work. They've never let me down and Barney always comes back happy and tired, it's fantastic to find people who care for my dogs just as much as I do"</p>
 			</div>
 		</div>
 	</div>
@@ -96,73 +97,53 @@
 		<div class="container">
 			<h5 class="title">Contact</h5>
 			<p>Paw Day Care operates across Broadstairs, Thanet, Ramsgate and Margate. We have a handful of carefully selected dog walkers and pet sitters in those areas. If you would like more information on our services and to discuss your individual needs fill in the contact form below and we will be in touch with you shortly. You can also phone us on the numbers provided.</p>
-				<div class="contactSplitContainer">
-					<h4 class="title email">Email</h4>
-					<div class="emailcontainer">
-						<form>
-							<label>Name:</label>
-							<input type="text" id="name" name="name">
-							<label>E-mail:</label>
-							<input type="text" id="mail" name="_replyto">
-							<label>Message:</label>
-							<textarea id="message" name="message"></textarea> 	
-							<button id="formSubmit">Send</button>
-						</form>
-					</div>
+			<div class="contactSplitContainer">
+				<h4 class="title email">Email</h4>
+				<h5 class="successMessage">Thank you for your enquiry</h5>
+				<div class="emailcontainer">
+					<form method="POST">
+						<label>Name:</label>
+						<input type="text" id="name" name="name">
+						<label>E-mail:</label>
+						<input type="text" id="mail" name="_replyto" required>
+						<label>Message:</label>
+						<textarea id="message" name="message"></textarea> 	
+						<button id="formSubmit">Send</button>
+					</form>
+
 				</div>
-				<div class="contactSplitContainer">
-					<h4 class="title tel">Telephone</h4>
-					<p>Land Line: <a href="tel:01183767403">01183767403</a></p>
-					<p>Mobile: <a href="tel:07583402257">07583402257</a></p>
-					<h4 class="title address">Address</h4>
-					<p>31 Coleman Crescent<br>Ramsgate<br>Kent<br>CT12 6AE</p>		
-				</div>
+			</div>
+			<div class="contactSplitContainer">
+				<h4 class="title tel">Telephone</h4>
+				<p>Land Line: <a href="tel:"></a></p>
+				<p>Mobile: <a href="tel:"></a></p>
+				<h4 class="title address">Address</h4>
+				<p>31<br>Ramsgate<br>Kent<br>CT12</p>		
 			</div>
 		</div>
 	</div>
+
 		<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	|	Footer
 	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-			<div class="footer">
-				<img class="dogfooter" src="./images/dogContact.png" alt="footer dog">
-				<div class="socialIcons">
-					<img src="./images/facebook.svg" alt="facebook">
-				</div>
-				<p>Feel Free to call on <a href="tel:07583402257">07583402257</a></p>
-				<p>or email on <a href="mailto:info@pawdaycare.com?Dog%20Enquiry">info@pawdaycare.com</a></p>
-			</div>
+	<div class="footer">
+		<img class="dogfooter" src="./images/dogContact.png" alt="footer dog">
+		<div class="socialIcons">
+			<img src="./images/facebook.svg" alt="facebook">
 		</div>
+		<p>Feel Free to call on <a href="tel:"></a></p>
+		<p>or email on <a href="mailto:info@pawdaycare.com?Dog%20Enquiry">info@pawdaycare.com</a></p>
 	</div>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript">
-
-		document.addEventListener("DOMContentLoaded", function(){
-			
-			var submitBtn = document.getElementById("formSubmit");
-			submitBtn.addEventListener("click", function(){
-				alert("1");
-				postForm();
-			}, false);
 
 
-			function postForm(){
-				alert("fdff");
-				$.ajax({
-				    url: "https://formspree.io/dthomaslomas@gmail.com", 
-				    method: "POST",
-				    data: {message: "hello!"},
-				    dataType: "json",
-				    success : function(data){
-				    	alert("sdg");
-				    },
-				    error : function(data){
-				    	console.log(data);
-				    }
-				});
-			}
-
-
-		}, false);
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/scripts/master.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109053989-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-109053989-1');
 	</script>
 </body>
 </html>
