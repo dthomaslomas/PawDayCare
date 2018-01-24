@@ -45,4 +45,26 @@ document.addEventListener("DOMContentLoaded", function(){
     },false);
 
 
+    // Auto scroll,removing # and single page links
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        event.preventDefault(); 
+    });
+
+
+    // Google tag manager
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-109053989-1');
+
+    //Google analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109053989-1');
+
 }, false);
